@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(104, 104, 228);
+}
+
+.prev-song {
+    background-image: url("./play-prev.svg") ;
+}
+.play-song{
+    background-image: url("./play.svg") ;
+}
+.next-song {
+     background-image: url("./play-next.svg");
+}
+.container {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    justify-content: space-between;
+}
+.player-icon {
+    width:32px;
+    height: 32px;
+    background-size: 32px 32px;
+    background-position: center center;
+    background-repeat:no-repeat ;
+    opacity:0.8;
+    transition: 0.3s;
+}
+
+.player-icon:hover{
+    cursor: pointer;
+    opacity:1;
+}
+
+.player-icon:active {
+    transform:scale(1.2) ;
+}

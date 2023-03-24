@@ -7,6 +7,11 @@ body {
 }
 .play-song{
     background-image: url("./play.svg") ;
+
+}
+.pause-song{
+background-image: url(./pause.svg);
+
 }
 .next-song {
      background-image: url("./play-next.svg");

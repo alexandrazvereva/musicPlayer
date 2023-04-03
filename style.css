@@ -1,42 +1,48 @@
 body {
     background-color: rgb(104, 104, 228);
+    background-image: url("./bg-pic.jpg");
 }
 
 .prev-song {
-    background-image: url("./play-prev.svg") ;
+    background-image: url("./play-prev.svg");
 }
-.play-song{
-    background-image: url("./play.svg") ;
+
+.play-song {
+    background-image: url("./play.svg");
 
 }
-.pause-song{
-background-image: url(./pause.svg);
+
+.pause-song {
+    background-image: url(./pause.svg);
 
 }
+
 .next-song {
-     background-image: url("./play-next.svg");
+    background-image: url("./play-next.svg");
 }
+
 .container {
     display: flex;
     width: 150px;
     height: 40px;
     justify-content: space-between;
 }
+
 .player-icon {
-    width:32px;
+    width: 32px;
     height: 32px;
     background-size: 32px 32px;
     background-position: center center;
-    background-repeat:no-repeat ;
-    opacity:0.8;
+    background-repeat: no-repeat;
+    opacity: 0.8;
     transition: 0.3s;
 }
 
-.player-icon:hover{
+.player-icon:hover {
     cursor: pointer;
-    opacity:1;
+    opacity: 1;
 }
 
 .player-icon:active {
-    transform:scale(1.2) ;
+    transform: scale(1.2);
 }

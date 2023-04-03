@@ -16,7 +16,7 @@ play.addEventListener("click", () => {
         play.classList.add("pause-song");
     } else {
         SONGS[currentSong].pause();
-       play.classList.add("play-song");
+        play.classList.add("play-song");
         play.classList.remove("pause-song");
     }
     isPlaying = !isPlaying;//vozmi isPlay i sdelai protivopoloznoe znachenie
@@ -28,14 +28,14 @@ prev.addEventListener("click", () => {
     console.log("You pressed prev-song")
     SONGS[currentSong].pause();
     currentSong--;
-if (currentSong<0){
-    currentSong=SONGS.length-1;
-}
+    if (currentSong < 0) {
+        currentSong = SONGS.length - 1;
+    }
     SONGS[currentSong].play();
-    isPlaying=true,
-    play.classList.remove("play-song");
+    isPlaying = true,
+        play.classList.remove("play-song");
     play.classList.add("pause-song");
- 
+
 });
 
 
@@ -43,7 +43,15 @@ let next = document.querySelector("#next-song");
 next.addEventListener("click", () => {
     console.log("You pressed next-song")
     SONGS[currentSong].pause();
-    currentSong++;
+    currentSong--;
+    if (currentSong < 0) {
+        currentSong = SONGS.length - 1;
+    }
     SONGS[currentSong].play();
+    isPlaying = true,
+        play.classList.remove("play-song");
+    play.classList.add("pause-song");
+
+
 });
-//dopisat next
+

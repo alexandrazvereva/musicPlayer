@@ -55,3 +55,27 @@ next.addEventListener("click", () => {
 
 });
 
+// //// Create the audio element for the player
+// let curr_track = document.createElement('audio');
+ 
+// // Define the list of tracks that have to be played
+// let track_list = [
+//   {
+//     name: "",
+//     artist: "",
+//     image: "Image URL",
+//     path: ".mp3"
+//   },
+//   {
+//     name: "",
+//     artist: "",
+//     image: "Image URL",
+//     path: ".mp3"
+//   },
+//   {
+//     name: "",
+//     artist: "",
+//     image: "Image URL",
+//     path: ".mp3",
+//   },
+// ];

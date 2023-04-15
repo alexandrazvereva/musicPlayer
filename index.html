@@ -9,36 +9,58 @@
   <link rel="stylesheet" href="style.css">
 
 </head>
-
 <body>
-  <div class="details">
-    <div class="track-art"></div>
-    <div class="track-name">Track Name</div>
-    <div class="track-artist">Track Artist</div>
-  </div>
+  
+<main>
+  <div class="slider-controls">
+    <div class="slider-icon slider-left"></div>
+    <div class="slider-icon slider-right"></div>
+</div>
+
+<div class="music_container">
   <div class="container">
     <div class="player-icon prev-song" id="prev-song"></div>
     <div class="player-icon play-song control-button" id="play-song"></div>
     <div class="player-icon next-song" id="next-song"></div>
-</div>
- <!-- Define the section for displaying the seek slider-->
- <div class="slider_container">
-  <div class="current-time">00:00</div>
-  <input type="range" min="1" max="100"
-    value="0" class="seek_slider" onchange="seekTo()">
-  <div class="total-duration">00:00</div>
+  </div>
+
+  <ul class="container-list">
+    <li>Morning by Edvard Grieg</li>
+    <li>A Little Night Music by W.A.Mozart</li>
+    <li>Swan Lake by P.I.Tchaikovsky</li>
+    <li>Spring by Vivaldi</li>
+  </ul>
 </div>
 
-<!-- Define the section for displaying the volume slider-->
-<div class="slider_container">
-  <i class="fa fa-volume-down"></i>
-  <input type="range" min="1" max="100"
-    value="99" class="volume_slider" onchange="setVolume()">
-  <i class="fa fa-volume-up"></i>
+
+<div class="container_now_info">
+  <div class="container_time">
+    <div class="hours"></div>
+    <div class="minutes"></div>
+    <div class="seconds"></div>
+  </div>
+  <div class="hello">
+    <p class="hello-text"></p>
+    <input class="userName-input" placeholder="[Enter name]">
+  </div>
 </div>
-  </audio>
-  <script src="main.js"></script>
-  <script src="background.js"></script>
+<div class="quotes">
+  <img src="" alt="" class="">
+  <p class="quote-text" id="quote-text"></p>
+  <p class="quote-author" id="quote-author"></p>
+</div>
+
+</main>
+
+
+<script src="main.js"></script>
+<script src="background.js"></script>
+<script src="morning-eveningMessage.js"></script>
+<script src="fetch-quotes.js"></script>
+<script src="time.js"></script>
+
+
+  
 </body>
 
 </html>

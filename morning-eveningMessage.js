@@ -1,4 +1,4 @@
-
+const greetingTag=document.
 function showMessage() {
     let currentHour = new Date().getHours();
     if (currentHour >= 4 && currentHour < 12) // after 4:00AM and before 12:00PM

@@ -2,6 +2,7 @@ const hoursDiv=document.querySelector(".hours");
 const minutesDiv=document.querySelector(".minutes");
 const secondsDiv=document.querySelector(".seconds");
 
+
 const dateDiv=document.querySelector(".date")
 let now=new Date();
 const days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]

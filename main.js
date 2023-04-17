@@ -7,6 +7,25 @@ let play = document.querySelector("#play-song");
 let currentSong = 3;
 const SONGS = [song0, song1, song2, song3];
 
+const songLi0=document.querySelector("#songLi0");
+const songLi1=document.querySelector("#songLi0");
+const songLi2=document.querySelector("#songLi0");
+const songLi3=document.querySelector("#songLi0");
+
+const songNames=document.querySelectorAll("li");
+console.log(songNames);
+
+function showActiveSong() {
+   songNames.forEach(li=>{
+    
+    if(li.id.slice(6)==currentSong) {
+        li.classList.add("active-song");
+    }
+    else   li.classList.remove("active-song");
+   })
+}
+
+
 play.addEventListener("click", () => {
 
 
@@ -20,7 +39,9 @@ play.addEventListener("click", () => {
         play.classList.remove("pause-song");
     }
     isPlaying = !isPlaying;//vozmi isPlay i sdelai protivopoloznoe znachenie
+showActiveSong();
 });
+
 
 
 let prev = document.querySelector("#prev-song");
@@ -35,7 +56,7 @@ prev.addEventListener("click", () => {
     isPlaying = true,
         play.classList.remove("play-song");
     play.classList.add("pause-song");
-
+    showActiveSong();
 });
 
 
@@ -52,7 +73,7 @@ next.addEventListener("click", () => {
         play.classList.remove("play-song");
     play.classList.add("pause-song");
 
-
+    showActiveSong();
 });
 
 // //// Create the audio element for the player

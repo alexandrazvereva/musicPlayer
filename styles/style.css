@@ -24,7 +24,7 @@ main {
     position:absolute;
     top:20px;
     left:30px;
-    background: url(./fullscreenIcon.svg);
+    background: url("../assets/icons/fullscreenIcon.svg");
     height: 30px;
     width: 30px;
     opacity:0.5;
@@ -37,6 +37,10 @@ main {
 }
 .fullscreen-icon:active{
     transform: scale(105%);
+}
+.fullscreen-active{
+    background: url("../assets/icons/fullscreen-exit.svg");
+
 }
 .slider-right {
     background-image: url(./slider-right.svg);

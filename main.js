@@ -4,7 +4,7 @@ let song1 = new Audio("./mozart-night-serenade.mp3")
 let song2 = new Audio("./vivaldi-spring.mp3")
 let song3 = new Audio("./tchaikovsky.mp3")
 let play = document.querySelector("#play-song");
-let currentSong = 3;
+let currentSong = 0;
 const SONGS = [song0, song1, song2, song3];
 
 const songLi0=document.querySelector("#songLi0");
@@ -64,9 +64,9 @@ let next = document.querySelector("#next-song");
 next.addEventListener("click", () => {
     console.log("You pressed next-song")
     SONGS[currentSong].pause();
-    currentSong--;
-    if (currentSong < 0) {
-        currentSong = SONGS.length - 1;
+    currentSong++;
+    if (currentSong === SONGS.length) {
+        currentSong=0 ;
     }
     SONGS[currentSong].play();
     isPlaying = true,

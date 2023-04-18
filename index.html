@@ -9,63 +9,55 @@
   <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-  
-<main>
-  <div class="slider-controls">
-    <div class="slider-icon slider-left"></div>
-    <div class="slider-icon slider-right"></div>
-</div>
 
-<div class="music_container">
-  <div class="container">
-    <div class="player-icon prev-song" id="prev-song"></div>
-    <div class="player-icon play-song control-button" id="play-song"></div>
-    <div class="player-icon next-song" id="next-song"></div>
-  </div>
+  <main>
+    <div class="slider-controls">
+      <div class="slider-icon slider-left"></div>
+      <div class="slider-icon slider-right"></div>
+    </div>
+    <div class="music_container">
+      <div class="container">
+        <div class="player-icon prev-song" id="prev-song"></div>
+        <div class="player-icon play-song control-button" id="play-song"></div>
+        <div class="player-icon next-song" id="next-song"></div>
+      </div>
+      <ul class="container-list">
+        <li id="songLi0">Morning by Edvard Grieg</li>
+        <li id="songLi1">A Little Night Music by W.A.Mozart</li>
+        <li id="songLi2">Spring by Vivaldi</li>
+        <li id="songLi3">Swan Lake by P.I.Tchaikovsky</li>
+      </ul>
+    </div>
+    <div class="container_now_info">
+      <div class="container_time">
+        <div class="hours"></div>
+        <div class="minutes"></div>
+        <div class="seconds"></div>
+      </div>
+      <div class="container_date">
+        <p class="date"></p>
+      </div>
+      <div class="hello">
+        <p class="hello-text"></p>
+        <input class="userName-input" placeholder="[Enter name]">
+      </div>
+    </div>
+    <div class="quotes">
+      <img src="./reload.svg" alt="random quote" class="quote-icon" id="quote-icon">
+      <p class="quote-text" id="quote-text"></p>
+      <p class="quote-author" id="quote-author"></p>
+    </div>
 
-  <ul class="container-list">
-    <li id="songLi0" >Morning by Edvard Grieg</li>
-    <li id="songLi1">A Little Night Music by W.A.Mozart</li>
-    
-    <li id="songLi2">Spring by Vivaldi</li>
-    <li id="songLi3">Swan Lake by P.I.Tchaikovsky</li>
-  </ul>
-</div>
+  </main>
 
+  <script src="main.js"></script>
+  <script src="background.js"></script>
+  <script src="greeting.js"></script>
+  <script src="random-quotes.js"></script>
+  <script src="time-date.js"></script>
 
-<div class="container_now_info">
-  <div class="container_time">
-    <div class="hours"></div>
-    <div class="minutes"></div>
-    <div class="seconds"></div>
-  </div>
-  <div class="container_date">
-    <p class="date"></p>
-
-  </div>
-  <div class="hello">
-    <p class="hello-text"></p>
-    <input class="userName-input" placeholder="[Enter name]">
-  </div>
-</div>
-<div class="quotes">
-  <img src="" alt="" class="">
-  <p class="quote-text" id="quote-text"></p>
-  <p class="quote-author" id="quote-author"></p>
-</div>
-
-</main>
-
-
-<script src="main.js"></script>
-<script src="background.js"></script>
-<script src="morning-eveningMessage.js"></script>
-<script src="fetch-quotes.js"></script>
-<script src="time.js"></script>
-
-
-  
 </body>
 
 </html>

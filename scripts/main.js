@@ -1,8 +1,8 @@
 let isPlaying = false;
-let song0 = new Audio("./grieg-morning.mp3");
-let song1 = new Audio("./mozart-night-serenade.mp3")
-let song2 = new Audio("./vivaldi-spring.mp3")
-let song3 = new Audio("./tchaikovsky.mp3")
+let song0 = new Audio("../assets/music/grieg-morning.mp3");
+let song1 = new Audio("../assets/music/mozart-night-serenade.mp3");
+let song2 = new Audio("../assets/music/vivaldi-spring.mp3");
+let song3 = new Audio("../assets/music/tchaikovsky.mp3");
 let play = document.querySelector("#play-song");
 let currentSong = 0;
 const SONGS = [song0, song1, song2, song3];

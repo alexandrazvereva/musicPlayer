@@ -7,7 +7,6 @@ let currentPicNumber = 49;
 fetch(query)
     .then(resp => resp.json())
     .then(arr => {
-        console.log(arr.photos.photo);
         picsArray = arr.photos.photo.map(element => element.url_l)
         let pic = picsArray[currentPicNumber];
         document.body.style.backgroundImage = `url(${pic})`;

@@ -18,6 +18,7 @@ main {
     max-width: 1400px;
     height: 100%;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .fullscreen-icon {
@@ -221,4 +222,11 @@ main {
     align-items: center;
     color: rgb(221, 232, 242);
     margin-top: 2%;
+}
+
+@media (min-width: 320px) and (max-width: 372px) {
+    .container_time {
+        font-size: 75px;
+
+    }
 }
